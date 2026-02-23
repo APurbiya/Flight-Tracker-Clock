@@ -3,7 +3,7 @@
 A wall-mounted LED matrix display that shows real-time aircraft flying near your location.  
 FlightWall will use ADS-B data from OpenSky and enriched flight metadata from FlightAware AeroAPI to display aircraft position, route, airline, and aircraft type on a modular 16×16 LED matrix wall — while also functioning as a large ambient clock when no aircraft are nearby.
 
-![Main Concept](images/main.png)
+![Main Concept](Images/main.png)
 
 ---
 
@@ -12,7 +12,7 @@ FlightWall will use ADS-B data from OpenSky and enriched flight metadata from Fl
 
 ### Front (LED Matrix Layout)
 
-![Front CAD](images/front.png)
+![Front CAD](Images/front.png)
 
 - 10× WS2812B 16×16 LED matrices
 - Seamless tiled display area
@@ -20,7 +20,7 @@ FlightWall will use ADS-B data from OpenSky and enriched flight metadata from Fl
 
 ### Back (Electronics & Mounting)
 
-![Back CAD](images/back.png)
+![Back CAD](Images/back.png)
 
 - ESP32 controller
 - Power distribution bus
