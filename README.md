@@ -8,7 +8,7 @@ FlightWall will use ADS-B data from OpenSky and enriched flight metadata from Fl
 ---
 
 
-## 📷 Hardware Design
+##  Hardware Design
 
 ### Front (LED Matrix Layout)
 
@@ -27,8 +27,15 @@ FlightWall will use ADS-B data from OpenSky and enriched flight metadata from Fl
 - Level shifter
 - Wall mounting points
 ---
+##  Wireing
+The panels will be wiered in a snake pattern like showns in this image
+![DIN_DOUT](Images/wire_panel.png)
 
-## 📡 Data Sources
+All other electronics wiring diagram
+![Diagram](Images/wire.png)
+
+
+##  Data Sources
 
 FlightWall combines two aviation data sources:
 
