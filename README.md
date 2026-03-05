@@ -66,6 +66,44 @@ Used for:
 - Airline identification
 - Aircraft details
 
+  # Data and Software
+
+## Data API Keys
+
+The data for this project consists of two main data sources:
+1. Core public [ADS-B](https://en.wikipedia.org/wiki/Automatic_Dependent_Surveillance%E2%80%93Broadcast) data for flight positions and callsigns - using [OpenSky](https://opensky-network.org)
+2. Flight information lookup - aircraft, airline, and route (origin/destination airport). This is typically the hardest / most expensive information to find. Using [FlightAware AeroAPI](https://flightaware.com/aeroapi)
+
+### Setting up OpenSky
+1. Register for an [OpenSky](https://opensky-network.org/) account
+2. Go to your [account page](https://opensky-network.org/my-opensky/account)
+3. Create a new API client and copy the `client_id` and `client_secret` to the [APIConfiguration.h](firmware/config/APIConfiguration.h) file
+
+
+### Setting up AeroAPI
+1. Go to the [FlightAware AeroAPI]([https://flightaware.com/aeroapi](https://flightaware.com/aeroapi)) page and create a personal account
+3. From the dashboard, open **API Keys**, click **Create API Key** and follow the steps
+8. Copy the generated key and add it to [APIConfiguration.h](firmware/config/APIConfiguration.h)
+
+
+## Software Setup
+
+### Set your WiFi
+
+Enter your WiFi credentials into `WIFI_SSID` and `WIFI_PASSWORD` in [WiFiConfiguration.h](firmware/config/WiFiConfiguration.h)
+
+### Set your location
+
+Set your location to track flights by updating the following values in [UserConfiguration.h](firmware/config/UserConfiguration.h):
+
+- `CENTER_LAT`: Latitude of the center point to track (e.g., your home or city)
+- `CENTER_LON`: Longitude of the center point
+- `RADIUS_KM`: Search radius in kilometers for flights to include
+
+### Build and flash with PlatformIO
+
+The firmware can be built and uploaded to the ESP32 using [PlatformIO](https://platformio.org/)
+
 ---
 
 |Item                           |Quantity|Individual Price|Bulk Price|Link                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
