@@ -9,6 +9,8 @@ FlightWall will use ADS-B data from OpenSky and enriched flight metadata from Fl
 
 
 ##  Hardware Design
+Onsape Link
+https://cad.onshape.com/documents/5e10ae0c6bd23bd6d8d1bee4/w/9cd8f516c83d0d0f76abd4b4/e/88136dfb222c5cb764a34b15?renderMode=0&uiState=699baecf1584b8ae0255865d
 
 ### Front (LED Matrix Layout)
 
